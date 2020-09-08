@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpari</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;0,900;1,200&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <header class="header">
+            <h1 class="header__title">Alpari</h1>
+            <p class="header__description">мультисервисная платформа для осознанного трейдинга</p>
+            <div class="slogan-wrapper">
+                <p class="slogan">Мы ценим время, поэтому собираем все самое важное в одном месте.</p>
+            </div>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#data">Данные</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#tehnology">Технологии</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#enviroment">Окружение</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#train">Обучение</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#support">Сопровождение</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#news">Новости</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#community">Комьюнити</a>
+                </li>
+            </ul>
+        </header>
+
+    </header>
+
+    <section class="content">
+        <div class="data" id="data">
+            <h1 class="block__title"><span class="title-alpari">Alpari</span> — провайдер качественных данных.</h1>
+            <p class="block__quote"> <span class="quote">“</span> Успех в торговле приходит от хорошего знания рынков и
+                еще лучшего знания самих
+                себя.<span class="quote">”</span></p>
+            <article class="block__article">Интересует волатильность ликвидных акций, обстановка на валютном рынке,
+                объемы
+                торгов криптоактивами? Мы решаем проблему миллиона открытых вкладок.
+                Теперь все данные топовых финансовых рынков в реальном времени вы можете найти, воспользовавшись
+                платформой Alpari.
+
+                Но это не все. Мы заботимся о качестве предоставляемых даннных.
+                Уникальная система множественных подтверждений позволяет мониторить массивный поток данных, который
+                поступает к нам из разных уголков земного шара, и предоставлять нашим клиентам только проверенную
+                информацию.
+
+                Оставьте заявку, и наш консультант подробно расскажет о качестве данных платформы Alpari.
+            </article>
+            <form class="form hidden" action="#" method="POST" onsubmit="event.preventDefault()">
+                <label for="name" class="label">
+                    <input class="name input" id="name" type="text" placeholder="Name" maxlength="20" required>
+                </label>
+                <label for="phone" class="label">
+                    <input class="phone input" id="phone" type="tel" placeholder="Phone" maxlength="20" required>
+                </label>
+                <label for="email" class="label">
+                    <input class="email input" id="email" type="email" placeholder="Email" maxlength="20" required>
+                </label>
+                <button class="consultation__btn btn"
+                    onclick="toogleForm([this.parentElement, this.parentElement.nextElementSibling])" 
+                    type="submit"
+                    title="consultation">Оставить заявку</button>
+            </form>
+            <button class="btn"
+             onclick="toogleForm([this, this.previousElementSibling])" title="consultation">Оставить
+                заявку</button>
+        </div>
+
+        <div class="tehnology" id="tehnology">
+            <h1 class="block__title"> <span class="title-alpari">Alpari</span> — евангелист пробивных технологий.</h1>
+            <p class="block__quote">
+                <span class="quote">“</span>Все, что у роботов получается быстрее и дешевле, в итоге начнут делать
+                роботы.<span class="quote">”</span>
+            </p>
+            <article class="block__article">Мы не навязываем будущее, мы адаптируем его для профессионалов, внедряя
+                самые
+                передовые тренды финтеха и IT. Уже сейчас мы используем алгоритмы машинного обучения, включая нейросети,
+                для прогнозирования движения рынков. Наши сигналы отличаются высокой точностью и радуют пользователей
+                оптимальной доходностью.
+
+                Мы также стремимся максимально автоматизировать торговые практики и рутины трейдеров, ведь одна из
+                основных задач платформы Alpari — вывести работу с финансовыми рынками на качественно новый уровень.
+
+                Свяжитесь с нашим консультантом, чтобы узнать больше об использовании новых технологий на платформе
+                Alpari.
+
+            </article>
+            <form class="form hidden" action="#" method="POST" onsubmit="event.preventDefault()">
+                <label for="name" class="label">
+                    <input class="name input" id="name" type="text" placeholder="Name" maxlength="20" required>
+                </label>
+                <label for="phone" class="label">
+                    <input class="phone input" id="phone" type="tel" placeholder="Phone" maxlength="20" required>
+                </label>
+                <label for="email" class="label">
+                    <input class="email input" id="email" type="email" placeholder="Email" maxlength="20" required>
+                </label>
+                <button class="consultation__btn btn"
+                onclick="toogleForm([this.parentElement, this.parentElement.nextElementSibling])" 
+                type="submit" title="consultation">Связаться</button>
+            </form>
+            <button class="btn"
+            onclick="toogleForm([this, this.previousElementSibling])"
+            title="consultation">Связаться</button>
+        </div>
+
+        <div class="enviroment" id="enviroment">
+            <h1 class="block__title"><span class="title-alpari">Alpari</span> — удобный рабочий энвайромент.
+            </h1>
+            <p class="block__quote"> <span class="quote">“</span>Бытие определеяет сознание.<span class="quote">”</span>
+            </p>
+            <article class="block__article">При создании оптимальной рабочей среды для трейдеров мы руководствуемся
+                двумя
+                принципами: простотой и практичностью пользовательского опыта. Мы собрали в рабочем инструментарии
+                платформы все самое необходимое для профессионального технического анализа. Пользователям удобно судить
+                о поведении цены, когда все под рукой.
+
+                На Alpari вы также можете провести глубокий анализ своих портфелей. Система, оснащенная искусственным
+                интеллектом, позволяет выявить слабые звенья и диверсифицировать риски.
+
+                Интересно?
+
+            </article>
+            <form class="form hidden" action="#" method="POST" onsubmit="event.preventDefault()">
+                <label for="name" class="label">
+                    <input class="name input" id="name" type="text" placeholder="Name" maxlength="20" required>
+                </label>
+                <label for="phone" class="label">
+                    <input class="phone input" id="phone" type="tel" placeholder="Phone" maxlength="20" required>
+                </label>
+                <label for="email" class="label">
+                    <input class="email input" id="email" type="email" placeholder="Email" maxlength="20" required>
+                </label>
+                <button class="consultation__btn btn"
+                onclick="toogleForm([this.parentElement, this.parentElement.nextElementSibling])" 
+                type="submit"
+                title="consultation">Регистрация</button>
+            </form>
+            <button class="btn"
+            onclick="toogleForm([this, this.previousElementSibling])"
+            title="consultation">Регистрация</button>
+        </div>
+        <div class="train" id="train">
+            <h1 class="block__title"> <span class="title-alpari">Alpari</span> — профессиональное обучение и
+                сертификация. </h1>
+            <p class="block__quote"><span class="quote">“</span>Тренировка не приводит к идеальным результатам, она
+                приводит к стабильным
+                результатам.<span class="quote">”</span>
+
+            </p>
+            <article class="block__article">Скальпинг, арбитраж, деривативы, короткие позиции, продажа волатильности...
+                Хотите
+                узнать, что это, или усовершенствовать свои навыки в разных торговых техниках и стратегиях? На платформе
+                Alpari дейтсвуют постоянные онлайн-курсы и вебинары разного уровня сложности. Их ведут профессиональные
+                трейдеры, у которых за плечами опыт увеличения прибыли в десятки и сотни раз. Кто как не они знают всю
+                изнанку торговли финансовыми активами.
+
+                Но даже после прохождения обучающих курсов мы помогаем нашим пользователям, предоставляя дополнительные
+                консультации. Мы также проводим сертификацию профессиональных трейдеров, открывая дорогу для престижного
+                трудоустройства.
+
+                Записаться на курс “Быстрый старт”, а также пройти экспресс-тестирование можно уже сейчас.
+
+            </article>
+            <form class="form hidden" action="#" method="POST" onsubmit="event.preventDefault()">
+                <label for="name" class="label">
+                    <input class="name input" id="name" type="text" placeholder="Name" maxlength="20" required>
+                </label>
+                <label for="phone" class="label">
+                    <input class="phone input" id="phone" type="tel" placeholder="Phone" maxlength="20" required>
+                </label>
+                <label for="email" class="label">
+                    <input class="email input" id="email" type="email" placeholder="Email" maxlength="20" required>
+                </label>
+                <button class="consultation__btn btn"
+                onclick="toogleForm([this.parentElement, this.parentElement.nextElementSibling])" 
+                type="submit"
+                title="consultation">Записаться на курс</button>
+            </form>
+            <button class="btn"
+            onclick="toogleForm([this, this.previousElementSibling])"
+            title="consultation">Записаться на курс</button>
+            <form class="form hidden" action="#" method="POST" onsubmit="event.preventDefault()">
+                <label for="name" class="label">
+                    <input class="name input" id="name" type="text" placeholder="Name" maxlength="20" required>
+                </label>
+                <label for="phone" class="label">
+                    <input class="phone input" id="phone" type="tel" placeholder="Phone" maxlength="20" required>
+                </label>
+                <label for="email" class="label">
+                    <input class="email input" id="email" type="email" placeholder="Email" maxlength="20" required>
+                </label>
+                <button class="consultation__btn btn"
+                onclick="toogleForm([this.parentElement, this.parentElement.nextElementSibling])" 
+                    type="submit"
+                title="consultation">Пройти тест</button>
+            </form>
+            <button class="btn"
+            onclick="toogleForm([this, this.previousElementSibling])"
+            title="consultation">Пройти тест</button>
+        </div>
+        <div class="support" id="support">
+            <h1 class="block__title"> <span class="title-alpari">Alpari</span> — квалифицированное сопровождение VIP
+                клиентов.
+            </h1>
+            <p class="block__quote"><span class="quote">“</span>Всякий раз, когда я вхожу в позицию, я знаю, где стоит
+                мой стоп.<span class="quote">”</span>
+
+
+            </p>
+            <article class="block__article">Трейдинг — высокодоходная инвестиционная практика с большими рисками.
+                Допустим, у
+                вас есть желание вступить в игру и получить сверхприбыль, но времени или навыков лично заниматься
+                торгами не хватает.
+
+                Мы предлагаем услуги профессиальных трейдеров и предоставляем возможности вступления в ряд закрытых
+                хедж-фондов. Плаформа Alpari выструпает посредником для формирования доверительных партнерских отношений
+                между всеми сторонами.
+
+
+                Для получения более детальной информации об это заполните форму:
+
+
+            </article>
+            <form class="form hidden" action="#" method="POST" onsubmit="event.preventDefault()">
+                <label for="name" class="label">
+                    <input class="name input" id="name" type="text" placeholder="Name" maxlength="20" required>
+                </label>
+                <label for="phone" class="label">
+                    <input class="phone input" id="phone" type="tel" placeholder="Phone" maxlength="20" required>
+                </label>
+                <label for="email" class="label">
+                    <input class="email input" id="email" type="email" placeholder="Email" maxlength="20" required>
+                </label>
+                <button class="consultation__btn btn"
+                onclick="toogleForm([this.parentElement, this.parentElement.nextElementSibling])" 
+                type="submit"
+                title="consultation">Форма</button>
+            </form>
+            <button class="btn"
+            onclick="toogleForm([this, this.previousElementSibling])"
+            title="consultation">Форма</button>
+        </div>
+        <div class="news" id="news">
+            <h1 class="block__title"> <span class="title-alpari">Alpari</span> — фронт актуальных новостей.
+            </h1>
+            <p class="block__quote"><span class="quote">“</span>Цена начинает реагировать задолго до новостей, новости
+                или плохие отчеты только
+                усугубляют
+                тренд.<span class="quote">”</span>
+
+            </p>
+            <article class="block__article">Мир информационно перегружен, но для успешного трейдинга нужно быть в курсе
+                всего.
+                Поэтому мы уделяем особое внимание новостному разделу Alpari. Для специального ежедневного дайджеста
+                наши редакторы делают подборку экономических, финансовых и бизнес-новостей со всего мира. Обзоры,
+                аналитика, мнения — выжимки главного в доступной форме и без воды. Вы узнаете о главных событиях дня
+                первыми через канал, который удобен именно для вас.
+
+            </article>
+            <div class="soc-links">
+                <a href="#" class="tel"> </a>
+                <a href="#" class="fb"> </a>
+                <a href="#" class="mail"></a>
+            </div>
+
+        </div>
+        <div class="community" id="community">
+            <h1 class="block__title"> <span class="title-alpari">Alpari</span> — комьюнити трейдеров 3.0.
+            </h1>
+            <p class="block__quote"><span class="quote">“</span>Нас определяет круг общения.<span class="quote">”</span>
+
+            </p>
+            <article class="block__article">Качество профессионального общения серьезно влияет на наши достижения в
+                работе.
+                Поэтому Alpari целенаправленно развивает сообщество трейдеров таким образом, чтобы сами участники были
+                заинтересованы в создании эффективного нетворкинга и обмене полезным контентом. У вас есть мнение,
+                гипотезы, экспертиза и вы хотите ею делиться, формируя свою репутацию и зарабатывая рейтинги? Тогда вам
+                у нас понравится.
+
+                Комьюнити Alpari ждет вас!
+
+            </article>
+
+            <form class="form hidden" action="#" method="POST" onsubmit="event.preventDefault()">
+                <label for="name" class="label">
+                    <input class="name input" id="name" type="text" placeholder="Name" maxlength="20" required>
+                </label>
+                <label for="phone" class="label">
+                    <input class="phone input" id="phone" type="tel" placeholder="Phone" maxlength="20" required>
+                </label>
+                <label for="email" class="label">
+                    <input class="email input" id="email" type="email" placeholder="Email" maxlength="20" required>
+                </label>
+                <button class="consultation__btn btn"
+                onclick="toogleForm([this.parentElement, this.parentElement.nextElementSibling])" 
+                type="submit"
+                title="consultation">Присоединиться</button>
+            </form>
+            <button class="btn"
+            onclick="toogleForm([this, this.previousElementSibling])"
+            title="consultation">Присоединиться</button>
+        </div>
+    </section>
+
+
+</body>
+<script src="./index.js"></script>
+
+</html>
